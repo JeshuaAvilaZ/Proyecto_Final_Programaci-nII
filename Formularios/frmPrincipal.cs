@@ -52,5 +52,10 @@ namespace Proyecto_Final_ProgramaciónII
             Mempleados.MdiParent = this;
             Mempleados.Show();
         }
+
+        private void pnlPanelPincipal_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
