@@ -40,5 +40,7 @@ namespace Proyecto_Final_ProgramaciónII.Eventia.Entidades
             strtipocliente = tipoCliente;
             strestado = estado;
         }
+
+
     }
 }
