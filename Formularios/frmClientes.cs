@@ -43,46 +43,85 @@ namespace Proyecto_Final_ProgramaciónII
         {
             try
             {
-                // Convertir el código de texto a número
-                int codigo = Convert.ToInt32(txtCodigoClientes.Text);
+                int estado = 0;
 
-                // Obtener el nombre
-                string nombre = txtNombreRazónClientes.Text;
-
-                // Obtener el tipo de cliente
-                string tipoCliente = cmbTipoCliente.Text;
-
-                // Obtener el estado
-                string estado = "Inactivo";
-
-               
                 if (rdbActivoCliente.Checked)
                 {
-                    estado = "Activo";
+                    estado = 1;
                 }
 
-                // Crear el objeto cliente
                 clsClientes ClienteTemporal = new clsClientes(
-                    codigo,
-                    nombre,
-                    tipoCliente,
-                    estado);
+                Convert.ToInt32(txtCodigoClientes.Text),
+                txtNombreRazónClientes.Text,
+                cmbTipoCliente.Text,
+                Convert.ToString(estado));
 
-                // Agregar el cliente al manejador
                 manejador.AgregarCliente(ClienteTemporal);
 
-                // Mostrar los datos en el DataGridView
-                refrescarGrid();
-
-                // Limpiar los controles
-                limpiarControles();
-
                 MessageBox.Show("Cliente agregado correctamente.");
+
             } 
             catch (Exception ex)
             {
                 MessageBox.Show($"Error al Agregar el Cliente: {ex.Message}");
             }
+
+            refrescarGrid();
+            limpiarControles();
+        }
+
+        private void btnModificarCliente_Click(object sender, EventArgs e)
+        {
+            int estado = 0;
+
+            if (rdbActivoCliente.Checked)
+            {
+                estado = 1;
+            }
+
+            bool actualizado = manejador.ModificarCliente(Convert.ToInt32(txtCodigoClientes.Text),
+                txtNombreRazónClientes.Text,
+                cmbTipoCliente.Text,
+                estado
+            );
+
+            if (actualizado) 
+            {
+                MessageBox.Show("Cliente actualizado correctamente.");
+                refrescarGrid();
+            }
+
+            else
+            {
+                MessageBox.Show("No se encontró el Cliente con el código proporcionado.");
+                refrescarGrid();
+            }
+
+            limpiarControles();
+
+        }
+
+        private void btnEliminarCliente_Click(object sender, EventArgs e)
+        {
+            if(manejador.EliminarCliente(Convert.ToInt32(txtCodigoClientes.Text)))
+            {
+                MessageBox.Show("Cliente eliminado correctamente.");
+                limpiarControles();
+            }
+            else
+            {
+                MessageBox.Show("No se encontró el libro con el código proporcionado.");
+            }
+        }
+
+        private void btnLimpiarCliente_Click(object sender, EventArgs e)
+        {
+            refrescarGrid();
+        }
+
+        private void frmClientes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlPanelPincipal = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbReportes = new System.Windows.Forms.GroupBox();
             this.btnReportes = new System.Windows.Forms.Button();
             this.gbOperaciones = new System.Windows.Forms.GroupBox();
@@ -43,12 +44,11 @@
             this.btnClientes = new System.Windows.Forms.Button();
             this.lblTitulo2 = new System.Windows.Forms.Label();
             this.lblTitulo1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlPanelPincipal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbReportes.SuspendLayout();
             this.gbOperaciones.SuspendLayout();
             this.gbConfiguración.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlPanelPincipal
@@ -61,9 +61,22 @@
             this.pnlPanelPincipal.Controls.Add(this.lblTitulo1);
             this.pnlPanelPincipal.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlPanelPincipal.Location = new System.Drawing.Point(0, 0);
+            this.pnlPanelPincipal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlPanelPincipal.Name = "pnlPanelPincipal";
-            this.pnlPanelPincipal.Size = new System.Drawing.Size(1085, 392);
+            this.pnlPanelPincipal.Size = new System.Drawing.Size(1447, 482);
             this.pnlPanelPincipal.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::Proyecto_Final_ProgramaciónII.Properties.Resources.ChatGPT_Image_4_oct_2026__01_39_20_p_m_;
+            this.pictureBox1.Location = new System.Drawing.Point(1163, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(243, 225);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
             // gbReportes
             // 
@@ -72,11 +85,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbReportes.AutoSize = true;
             this.gbReportes.Controls.Add(this.btnReportes);
-            this.gbReportes.Location = new System.Drawing.Point(129, 291);
-            this.gbReportes.Margin = new System.Windows.Forms.Padding(2);
+            this.gbReportes.Location = new System.Drawing.Point(172, 358);
+            this.gbReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbReportes.Name = "gbReportes";
-            this.gbReportes.Padding = new System.Windows.Forms.Padding(2);
-            this.gbReportes.Size = new System.Drawing.Size(677, 84);
+            this.gbReportes.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbReportes.Size = new System.Drawing.Size(903, 103);
             this.gbReportes.TabIndex = 12;
             this.gbReportes.TabStop = false;
             this.gbReportes.Text = "Reportes";
@@ -84,10 +97,10 @@
             // btnReportes
             // 
             this.btnReportes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnReportes.Location = new System.Drawing.Point(230, 17);
-            this.btnReportes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReportes.Location = new System.Drawing.Point(307, 21);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(243, 50);
+            this.btnReportes.Size = new System.Drawing.Size(324, 62);
             this.btnReportes.TabIndex = 0;
             this.btnReportes.Text = "Gestión de Reportes";
             this.btnReportes.UseVisualStyleBackColor = true;
@@ -101,11 +114,11 @@
             this.gbOperaciones.Controls.Add(this.btnCobros);
             this.gbOperaciones.Controls.Add(this.btnEventos);
             this.gbOperaciones.Controls.Add(this.btnReservaciones);
-            this.gbOperaciones.Location = new System.Drawing.Point(129, 210);
-            this.gbOperaciones.Margin = new System.Windows.Forms.Padding(2);
+            this.gbOperaciones.Location = new System.Drawing.Point(172, 258);
+            this.gbOperaciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbOperaciones.Name = "gbOperaciones";
-            this.gbOperaciones.Padding = new System.Windows.Forms.Padding(2);
-            this.gbOperaciones.Size = new System.Drawing.Size(677, 78);
+            this.gbOperaciones.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbOperaciones.Size = new System.Drawing.Size(903, 96);
             this.gbOperaciones.TabIndex = 11;
             this.gbOperaciones.TabStop = false;
             this.gbOperaciones.Text = "Operaciones";
@@ -113,10 +126,10 @@
             // btnCobros
             // 
             this.btnCobros.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnCobros.Location = new System.Drawing.Point(505, 14);
-            this.btnCobros.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCobros.Location = new System.Drawing.Point(673, 17);
+            this.btnCobros.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCobros.Name = "btnCobros";
-            this.btnCobros.Size = new System.Drawing.Size(116, 47);
+            this.btnCobros.Size = new System.Drawing.Size(155, 58);
             this.btnCobros.TabIndex = 2;
             this.btnCobros.Text = "Cobros";
             this.btnCobros.UseVisualStyleBackColor = true;
@@ -124,10 +137,10 @@
             // btnEventos
             // 
             this.btnEventos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnEventos.Location = new System.Drawing.Point(264, 14);
-            this.btnEventos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEventos.Location = new System.Drawing.Point(352, 17);
+            this.btnEventos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEventos.Name = "btnEventos";
-            this.btnEventos.Size = new System.Drawing.Size(122, 47);
+            this.btnEventos.Size = new System.Drawing.Size(163, 58);
             this.btnEventos.TabIndex = 1;
             this.btnEventos.Text = "Eventos";
             this.btnEventos.UseVisualStyleBackColor = true;
@@ -135,10 +148,10 @@
             // btnReservaciones
             // 
             this.btnReservaciones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnReservaciones.Location = new System.Drawing.Point(52, 14);
-            this.btnReservaciones.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReservaciones.Location = new System.Drawing.Point(69, 17);
+            this.btnReservaciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReservaciones.Name = "btnReservaciones";
-            this.btnReservaciones.Size = new System.Drawing.Size(111, 47);
+            this.btnReservaciones.Size = new System.Drawing.Size(148, 58);
             this.btnReservaciones.TabIndex = 0;
             this.btnReservaciones.Text = "Reservaciones";
             this.btnReservaciones.UseVisualStyleBackColor = true;
@@ -154,11 +167,11 @@
             this.gbConfiguración.Controls.Add(this.btnTipoEvento);
             this.gbConfiguración.Controls.Add(this.btnSalones);
             this.gbConfiguración.Controls.Add(this.btnClientes);
-            this.gbConfiguración.Location = new System.Drawing.Point(129, 115);
-            this.gbConfiguración.Margin = new System.Windows.Forms.Padding(2);
+            this.gbConfiguración.Location = new System.Drawing.Point(172, 142);
+            this.gbConfiguración.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbConfiguración.Name = "gbConfiguración";
-            this.gbConfiguración.Padding = new System.Windows.Forms.Padding(2);
-            this.gbConfiguración.Size = new System.Drawing.Size(677, 82);
+            this.gbConfiguración.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbConfiguración.Size = new System.Drawing.Size(903, 108);
             this.gbConfiguración.TabIndex = 10;
             this.gbConfiguración.TabStop = false;
             this.gbConfiguración.Text = "Configuración";
@@ -167,10 +180,10 @@
             // 
             this.btnEmpleados.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btnEmpleados.AutoSize = true;
-            this.btnEmpleados.Location = new System.Drawing.Point(552, 14);
-            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEmpleados.Location = new System.Drawing.Point(736, 17);
+            this.btnEmpleados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEmpleados.Name = "btnEmpleados";
-            this.btnEmpleados.Size = new System.Drawing.Size(96, 51);
+            this.btnEmpleados.Size = new System.Drawing.Size(103, 53);
             this.btnEmpleados.TabIndex = 4;
             this.btnEmpleados.Text = "Empleados";
             this.btnEmpleados.UseVisualStyleBackColor = true;
@@ -180,10 +193,10 @@
             // 
             this.btnServicios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btnServicios.AutoSize = true;
-            this.btnServicios.Location = new System.Drawing.Point(424, 14);
-            this.btnServicios.Margin = new System.Windows.Forms.Padding(2);
+            this.btnServicios.Location = new System.Drawing.Point(565, 17);
+            this.btnServicios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnServicios.Name = "btnServicios";
-            this.btnServicios.Size = new System.Drawing.Size(96, 51);
+            this.btnServicios.Size = new System.Drawing.Size(101, 53);
             this.btnServicios.TabIndex = 3;
             this.btnServicios.Text = "Servicios";
             this.btnServicios.UseVisualStyleBackColor = true;
@@ -193,10 +206,10 @@
             // 
             this.btnTipoEvento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btnTipoEvento.AutoSize = true;
-            this.btnTipoEvento.Location = new System.Drawing.Point(289, 14);
-            this.btnTipoEvento.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTipoEvento.Location = new System.Drawing.Point(385, 17);
+            this.btnTipoEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTipoEvento.Name = "btnTipoEvento";
-            this.btnTipoEvento.Size = new System.Drawing.Size(102, 51);
+            this.btnTipoEvento.Size = new System.Drawing.Size(117, 53);
             this.btnTipoEvento.TabIndex = 2;
             this.btnTipoEvento.Text = "TipoEventos";
             this.btnTipoEvento.UseVisualStyleBackColor = true;
@@ -206,10 +219,10 @@
             // 
             this.btnSalones.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btnSalones.AutoSize = true;
-            this.btnSalones.Location = new System.Drawing.Point(169, 14);
-            this.btnSalones.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalones.Location = new System.Drawing.Point(225, 17);
+            this.btnSalones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalones.Name = "btnSalones";
-            this.btnSalones.Size = new System.Drawing.Size(95, 51);
+            this.btnSalones.Size = new System.Drawing.Size(104, 53);
             this.btnSalones.TabIndex = 1;
             this.btnSalones.Text = "Salones";
             this.btnSalones.UseVisualStyleBackColor = true;
@@ -219,10 +232,10 @@
             // 
             this.btnClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btnClientes.AutoSize = true;
-            this.btnClientes.Location = new System.Drawing.Point(39, 14);
-            this.btnClientes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClientes.Location = new System.Drawing.Point(52, 17);
+            this.btnClientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(92, 51);
+            this.btnClientes.Size = new System.Drawing.Size(96, 53);
             this.btnClientes.TabIndex = 0;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.UseVisualStyleBackColor = true;
@@ -232,10 +245,9 @@
             // 
             this.lblTitulo2.AutoSize = true;
             this.lblTitulo2.Font = new System.Drawing.Font("Monotype Corsiva", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo2.Location = new System.Drawing.Point(14, 73);
-            this.lblTitulo2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitulo2.Location = new System.Drawing.Point(19, 90);
             this.lblTitulo2.Name = "lblTitulo2";
-            this.lblTitulo2.Size = new System.Drawing.Size(344, 26);
+            this.lblTitulo2.Size = new System.Drawing.Size(429, 34);
             this.lblTitulo2.TabIndex = 9;
             this.lblTitulo2.Text = "Sistema de Administración de Eventos";
             // 
@@ -243,43 +255,30 @@
             // 
             this.lblTitulo1.AutoSize = true;
             this.lblTitulo1.Font = new System.Drawing.Font("Monotype Corsiva", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo1.Location = new System.Drawing.Point(14, 33);
-            this.lblTitulo1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitulo1.Location = new System.Drawing.Point(19, 41);
             this.lblTitulo1.Name = "lblTitulo1";
-            this.lblTitulo1.Size = new System.Drawing.Size(81, 26);
+            this.lblTitulo1.Size = new System.Drawing.Size(102, 34);
             this.lblTitulo1.TabIndex = 8;
             this.lblTitulo1.Text = "Eventia";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::Proyecto_Final_ProgramaciónII.Properties.Resources.ChatGPT_Image_4_oct_2026__01_39_20_p_m_;
-            this.pictureBox1.Location = new System.Drawing.Point(872, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(182, 183);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmEventia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1085, 701);
+            this.ClientSize = new System.Drawing.Size(1447, 863);
             this.Controls.Add(this.pnlPanelPincipal);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmEventia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pagina Principal";
             this.pnlPanelPincipal.ResumeLayout(false);
             this.pnlPanelPincipal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbReportes.ResumeLayout(false);
             this.gbOperaciones.ResumeLayout(false);
             this.gbConfiguración.ResumeLayout(false);
             this.gbConfiguración.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

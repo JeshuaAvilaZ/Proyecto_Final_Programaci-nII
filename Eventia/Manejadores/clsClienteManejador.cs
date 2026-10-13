@@ -24,35 +24,36 @@ namespace Proyecto_Final_ProgramaciónII.Eventia.Negocio
             return lstClientes;
         }
 
-        // MODIFICAR
-        public void ModificarCliente(int codigo, string nombre, string tipoCliente, string estado)
+        public clsClientes buscarCliente(int codigo)
         {
-            for (int i = 0; i < lstClientes.Count; i++)
+            return lstClientes.FirstOrDefault(L => L.Codigo == codigo);
+        }
+
+        // MODIFICAR
+        public bool ModificarCliente(int codigo, string nombre, string tipoCliente, int estado)
+        {
+            clsClientes CLienteTemp = buscarCliente(codigo);
+
+            if (CLienteTemp == null)
             {
-                if (lstClientes[i].Codigo == codigo)
-                {
-                    // Crear un nuevo objeto con los datos modificados
-                    clsClientes objCliente = new clsClientes (codigo, nombre, tipoCliente, estado);
-
-                    lstClientes[i] = objCliente;
-
-                    break;
-                }
+                return false;
             }
+
+            CLienteTemp.Actualizar(codigo, nombre, tipoCliente, estado);
+            return true;
         }
 
         // ELIMINAR
-        public void EliminarCliente(int codigo)
+        public bool EliminarCliente(int codigo)
         {
-            for (int i = 0; i < lstClientes.Count; i++)
-            {
-                if (lstClientes[i].Codigo == codigo)
-                {
-                    lstClientes.RemoveAt(i);
+            clsClientes CLienteTemp = buscarCliente(codigo);
 
-                    break;
-                }
+            if ( CLienteTemp == null)
+            {
+                return false;
             }
+            lstClientes.Remove(CLienteTemp);
+            return true;
         }
     }
 }

@@ -10,9 +10,9 @@ namespace Proyecto_Final_ProgramaciónII.Eventia.Entidades
     {
         //propiedades del cliente
         private int intcodigo;
-        private string strnombre = "";
-        private string strtipocliente = "Persona";
-        private string strestado = "Activo";
+        private string strnombre;
+        private string strtipocliente;
+        private int intEstado;
 
         public int Codigo 
         { 
@@ -26,21 +26,31 @@ namespace Proyecto_Final_ProgramaciónII.Eventia.Entidades
         { 
             get{ return strtipocliente; } 
         }
-        public string Estado 
+        public int Estado 
         { 
-            get{ return strestado; } 
+            get{ return intEstado; } 
         }
 
         // constructor 
 
-        public clsClientes(int codigo, string nombre, string tipoCliente, string estado)
+        public clsClientes(int pintcodigo, string pstrnombre, string pstrtipoCliente, string pintestado)
         {
-            intcodigo = codigo;
-            strnombre = nombre;
-            strtipocliente = tipoCliente;
-            strestado = estado;
+            this.intcodigo = pintcodigo;
+            this.strnombre = pstrnombre;
+            this.strtipocliente = pstrtipoCliente;
+            this.intEstado = 1;
         }
 
+
+
+        // Actualizar
+        public void Actualizar(int pintcodigo, string pstrnombre, string pstrtipoCliente, int pintEstado)
+        {
+            this.intcodigo = pintcodigo;
+            this.strnombre = pstrnombre;
+            this.strtipocliente = pstrtipoCliente;
+            this.intEstado = pintEstado;
+        }
 
     }
 }

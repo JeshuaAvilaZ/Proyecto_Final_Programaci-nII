@@ -53,6 +53,7 @@
     <Compile Include="Eventia\Clases\clsSalon.cs" />
     <Compile Include="Eventia\Clases\clsServicio.cs" />
     <Compile Include="Eventia\Clases\clsTipoEvento.cs" />
+    <Compile Include="Eventia\Datos\clsConexion.cs" />
     <Compile Include="Eventia\Manejadores\clsClienteManejador.cs" />
     <Compile Include="Eventia\Manejadores\clsEmpleadoManejador.cs" />
     <Compile Include="Eventia\Manejadores\clsSalonManejador.cs" />
