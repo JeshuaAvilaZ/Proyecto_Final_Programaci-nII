@@ -50,8 +50,8 @@ namespace Proyecto_Final_ProgramaciónII.Eventia.Entidades
         // Constructor
         public clsEmpleado(int codigo, string nombrecompleto, string usuario, string contraseña, string rol, string estado)
         {
-            intcodigo = codigo;
-            strnombrecompleto = nombrecompleto;
+            this.intcodigo = codigo;
+            this.strnombrecompleto = nombrecompleto;
             strusuario = usuario;
             strcontraseña = contraseña;
             strrol = rol;
