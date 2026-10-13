@@ -58,5 +58,13 @@ namespace Proyecto_Final_ProgramaciónII.Eventia.Entidades
             strestado = estado;
         }
 
+        public void Actualizar(int pintcodigo, string pstrnombre, string pstrtipoCliente, int pintEstado)
+        {
+            this.intcodigo = pintcodigo;
+            this.strnombre = pstrnombre;
+            this.strtipocliente = pstrtipoCliente;
+            this.intEstado = pintEstado;
+        }
+
     }
 }
