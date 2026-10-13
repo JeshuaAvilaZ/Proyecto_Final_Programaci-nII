@@ -52,5 +52,6 @@ namespace Proyecto_Final_ProgramaciónII.Eventia.Entidades
             this.intEstado = pintEstado;
         }
 
+
     }
 }
