@@ -52,19 +52,13 @@ namespace Proyecto_Final_ProgramaciónII.Eventia.Entidades
         {
             this.intcodigo = codigo;
             this.strnombrecompleto = nombrecompleto;
-            strusuario = usuario;
-            strcontraseña = contraseña;
-            strrol = rol;
-            strestado = estado;
+            this.strusuario = usuario;
+            this.strcontraseña = contraseña;
+            this.strrol = rol;
+            this.strestado = estado;
         }
 
-        public void Actualizar(int pintcodigo, string pstrnombre, string pstrtipoCliente, int pintEstado)
-        {
-            this.intcodigo = pintcodigo;
-            this.strnombre = pstrnombre;
-            this.strtipocliente = pstrtipoCliente;
-            this.intEstado = pintEstado;
-        }
+
 
     }
 }

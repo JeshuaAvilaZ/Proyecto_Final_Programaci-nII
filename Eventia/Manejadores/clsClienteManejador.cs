@@ -55,5 +55,7 @@ namespace Proyecto_Final_ProgramaciónII.Eventia.Negocio
             lstClientes.Remove(CLienteTemp);
             return true;
         }
+
+
     }
 }

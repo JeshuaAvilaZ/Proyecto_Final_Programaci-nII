@@ -49,5 +49,7 @@ namespace Proyecto_Final_ProgramaciónII.Eventia.Entidades
             intcapacidad = capacidad;
             strestado = estado;
         }
+
+    
     }
 }

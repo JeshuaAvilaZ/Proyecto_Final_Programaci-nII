@@ -35,5 +35,12 @@ namespace Proyecto_Final_ProgramaciónII.Eventia.Entidades
             strnombre = nombre;
             strcategoria = categoria;
         }
+
+        public void Actualizar(int codigo, string nombre, string categoria)
+        {
+            intcodigo = codigo;
+            strnombre = nombre;
+            strcategoria = categoria;
+        }
     }
 }

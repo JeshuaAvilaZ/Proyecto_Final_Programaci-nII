@@ -110,7 +110,7 @@ namespace Proyecto_Final_ProgramaciónII
             }
             else
             {
-                MessageBox.Show("No se encontró el libro con el código proporcionado.");
+                MessageBox.Show("No se encontró el cliente con el código proporcionado.");
             }
         }
 
